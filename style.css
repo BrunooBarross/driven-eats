@@ -1,0 +1,156 @@
+/*--------------  Escondendo o scroll das páginas ---------------------*/
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+    html{
+      scrollbar-width: none;
+     
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+#container {
+    width: 414px;
+    margin:0 auto;			
+}
+.banner{    
+    width: 100%;  
+    height: 92px;
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+.banner h1{
+    padding-left: 21px;
+    padding-top: 15px;
+    font-family: Righteous;
+    font-size: 44px;   
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.banner h2 { 
+    padding-left: 21px;
+    font-family: Roboto; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.conteudo{
+    background-color: #E5E5E5;;
+}
+.conteudo h3{
+    padding-left: 19px;
+    padding-top: 31px;
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    font-weight: 400;
+    color: #333333;
+}
+.conteudo-div{
+    display: flex;
+    height: 216px;
+    width: 100%;
+    margin-top: 11px;
+    overflow-x: scroll; 
+    scrollbar-width: none;
+    background-color: blue;
+}
+.produto{
+    width: 172px;
+    height: 216px;
+    margin-left: 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.produto img{
+    width: 144px;
+    height: 87px;  
+    margin-top: 18px;
+    margin-left: 14px;
+    border-radius: 4px;
+}
+.produto span{
+    margin-left: 15px;
+    padding-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+}
+.descricao{
+    width: 147px;
+    height: 39px; 
+    margin-left: 13px;
+    margin-top: 1px;
+}
+.descricao p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.preco{
+    margin-top: 5px;
+    margin-left: 13px;
+}
+.preco p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+footer{   
+    display: flex;
+    position: sticky;   
+    height: 92px;
+    bottom: 0px;
+    background: #FFFFFF;
+    justify-content: center;
+}
+.button {
+    width: 364px;
+    height: 61px; 
+    border: none;
+    border-radius: 50px;
+    background: #CBCBCB;
+    margin-top: 15px;   
+    
+    cursor: pointer;
+}
+
+.button p{
+    color: #FFFFFF; 
+    font-size: 20px;
+    padding: 0px 80px 0px 70px; 
+    font-family: Roboto; 
+    font-weight: 0;  
+}
+
+@media (max-width: 414px) {	  
+    #container{
+        width: 100vw;
+       
+    }   
+}
+
+
+
