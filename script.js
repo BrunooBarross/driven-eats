@@ -28,3 +28,19 @@ function escolherHeineken(){
     document.getElementById("coca").style.borderColor = "white";
     document.getElementById("fanta").style.borderColor = "white";
 }
+function escolherPudim(){   
+    document.getElementById("pudim").style.borderColor = "green";
+    document.getElementById("morango").style.borderColor = "white";
+    document.getElementById("crumble").style.borderColor = "white";
+}
+function escolherMorango(){
+    document.getElementById("morango").style.borderColor = "green";
+    document.getElementById("pudim").style.borderColor = "white";   
+    document.getElementById("crumble").style.borderColor = "white";
+}
+function escolherCrumble(){
+    document.getElementById("crumble").style.borderColor = "green";
+    document.getElementById("pudim").style.borderColor = "white";
+    document.getElementById("morango").style.borderColor = "white";
+}
+
