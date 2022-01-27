@@ -25,28 +25,35 @@ header{
     box-sizing: border-box;
 }
 .banner h1{
+    width: 248px;
+    height: 44px;
     padding-left: 21px;
     padding-top: 15px;
     font-family: Righteous;
-    font-size: 44px;   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px; 
     letter-spacing: -0.012em;
-    color: #FFFFFF;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #FFFFFF;    
 }
 .banner h2 { 
+    width: 226px;
+    height: 17px;
     padding-left: 21px;
     font-family: Roboto; 
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 21px;
     color: #FFFFFF;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    
 }
 .conteudo{
     background-color: #E5E5E5;;
 }
 .conteudo h3{
+    width: 320px;
+    height: 25px;
     padding-left: 19px;
     padding-top: 31px;
     font-family: Righteous;
@@ -54,15 +61,14 @@ header{
     font-weight: normal;
     font-size: 26px;
     line-height: 32px;
-    letter-spacing: 0.018em;
-    font-weight: 400;
+    letter-spacing: 0.018em;  
     color: #333333;
 }
 .conteudo-div{
-    display: flex;
+    display: inline-flex;
     height: 216px;
     width: 100%;
-    margin-top: 11px;
+    margin-top: 17px;
     overflow-x: scroll; 
     scrollbar-width: none;   
 }
@@ -82,13 +88,14 @@ header{
 .produto img{
     width: 144px;
     height: 87px;  
+    text-align: center;
     margin-top: 12px;
     margin-left: 9px;
-    margin-right: 14px;
+    margin-right: 9px;
     border-radius: 4px;    
 }
 .produto span{
-    margin-left: 10px;
+    margin-left: 9px;
     padding-top: 10px;
     font-family: Roboto;
     font-style: normal;
@@ -101,7 +108,7 @@ header{
     display: flex;
     width: 147px;
     height: 39px; 
-    margin-left: 10px;
+    margin-left: 8px;
     margin-top: 1px;
     align-items: center;
 }
@@ -116,7 +123,7 @@ header{
 }
 .preco{
     margin-top: 7px;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 .preco p{
     font-family: Roboto;

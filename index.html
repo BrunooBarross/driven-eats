@@ -19,11 +19,11 @@
                     <h2>Sua comida em 6 minutos</h2>
                 </div>
             </header>
-            <div class="conteudo">
+            <div class="conteudo">                
                 <h3>Primeiro, seu prato</h3>
                 <div class="conteudo-div">
-                    <div class="produto item1">
-                        <img src="https://www.kitano.com.br/wp-content/uploads/2019/07/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" alt="frango assado">
+                    <div class="produto item1" id="frango" onclick="escolherFrango()">                       
+                            <img src="https://www.kitano.com.br/wp-content/uploads/2019/07/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" alt="frango assado">                                             
                         <span>Frango Yin Yang</span>
                         <div class="descricao">
                             <p>Um pouco de batata, um pouco de farofa </p>
@@ -32,7 +32,7 @@
                             <p>R$ 16,90</p>
                         </div>                            
                     </div>
-                    <div class="produto">
+                    <div class="produto" id="sushi" onclick="escolherSushi()">
                         <img src="https://a-static.mlcdn.com.br/1500x1500/embalagem-barca-sushi-pequena-galvanotek-go935-100und/embalagemfacil/574894343/5dff8108352ef5ca28b116830b99db4d.jpg" alt="barca sushi">
                         <span>Barca Sushi</span>
                         <div class="descricao">
@@ -42,7 +42,7 @@
                             <p>R$ 30,90</p>
                         </div>                            
                     </div>   
-                    <div class="produto">
+                    <div class="produto" id="peixe" onclick="escolherPeixe()">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d1/24/21/porcao-de-peixe-frito.jpg" alt="Peixe Frito">
                         <span>Peixe Frito</span>
                         <div class="descricao">
@@ -55,7 +55,7 @@
                 </div>
                 <h3>Agora, sua bebida</h3>
                 <div class="conteudo-div">
-                    <div class="produto item1">
+                    <div class="produto item1" id="coca">
                         <img src="https://thumbs.dreamstime.com/b/pode-e-o-vidro-de-coca-cola-com-gelo-no-fundo-de-madeira-80533589.jpg" alt="Coca cola">
                         <span>Coquinha</span>
                         <div class="descricao">
@@ -65,7 +65,7 @@
                             <p>R$ 7,90</p>
                         </div>                            
                     </div>
-                    <div class="produto">
+                    <div class="produto" id="fanta">
                         <img src="https://st4.depositphotos.com/2007325/31219/i/600/depositphotos_312192794-stock-photo-fanta-orange-vintage-can-black.jpg" alt="fanta 350">
                         <span>Fanta Lata</span>
                         <div class="descricao">
@@ -75,7 +75,7 @@
                             <p>R$ 6,90</p>
                         </div>                            
                     </div>   
-                    <div class="produto">
+                    <div class="produto" id="heineken">
                         <img src="https://i.pinimg.com/originals/a8/26/f7/a826f7fcc4d2006c5a52483e445178be.jpg" alt="Heineken">
                         <span>Heineken</span>
                         <div class="descricao">
@@ -125,6 +125,6 @@
                 <button class="button"><p>Selecione os 3 itens para fechar o pedido</p></button>                
             </footer>           
         </div>
-       
+       <script src="script.js"></script>
     </body>        
 </html>
