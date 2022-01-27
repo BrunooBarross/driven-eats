@@ -158,6 +158,10 @@ footer{
     font-family: Roboto; 
     font-weight: 0;  
 }
+
+
+
+
 @media (max-width: 414px) {	  
     #container{
         width: 100vw;
