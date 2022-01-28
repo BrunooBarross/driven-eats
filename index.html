@@ -13,15 +13,41 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">      
         </head>
-    <body>
+    <body>         
         <div id="container">
-            <header>
-                <div class="banner">
-                    <h1>DrivenEats</h1>
-                    <h2>Sua comida em 6 minutos</h2>
+            <div class="modal-container">
+                <div class="modal">
+                    <h1>Confirme seu pedido</h1>
+                    <div class="modal-texto">
+                        <div class="modal-itens">
+                            <p id="comida"></p>
+                            <p id="bebida"></p>
+                            <p id="sobremesa"></p>
+                            <p>TOTAL</p>
+                        </div>
+                        <div class="modal-preco">
+                            <p id="comida-preco"></p>
+                            <p id="bebida-preco"></p>
+                            <p id="sobremesa-preco"></p>
+                            <p id="total"></p>
+                        </div>                        
+                    </div>
+                    <div class="botao-div" onclick="finalizarPedido()">
+                        <button id="confirma">Tudo certo, pode pedir!</button>
+                    </div>
+                    <div class="cancelar" onclick="cancelarPedido()">
+                        <p id="cancelar-pedido">Cancelar</p>
+                    </div>
                 </div>
-            </header>
-            <div class="conteudo">                
+
+            </div>             
+            <div class="conteudo">
+                <header>
+                    <div class="banner">
+                        <h1>DrivenEats</h1>
+                        <h2>Sua comida em 6 minutos</h2>
+                    </div>
+                </header>               
                 <h3>Primeiro, seu prato</h3>
                 <div class="conteudo-div" data-identifier="dishes">
                     <div class="produto item1" id="frango" onclick="escolherFrango()" data-identifier="food-option">                       
@@ -122,9 +148,9 @@
                         </div>                            
                     </div>                                                                                    
                 </div>           
-            </div> 
+            </div>           
             <footer>               
-                <button onclick="finalizarPedido()" id="botao" class="button"><p>Selecione os 3 itens para fechar o pedido</p></button>                
+                <button onclick="abrirModal()" id="botao" class="button"><p>Selecione os 3 itens para fechar o pedido</p></button>                
             </footer>           
         </div>
        <script src="script.js"></script>

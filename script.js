@@ -4,16 +4,16 @@ let sobremesa;
 let valorPrato;
 let valorBebida;
 let valorSobremesa;
+let total;
 
 document.querySelector("#botao").disabled=true;
 function habilitarBotao(){  
     if(prato !== undefined && bebida !== undefined && sobremesa !== undefined){  
         document.querySelector("#botao").disabled=false;      
         document.getElementById("botao").style.background = "#32B72F";
-        document.getElementById("botao").innerHTML="<p>Finalizar pedido</p>";
-    }
+        document.getElementById("botao").innerHTML="<p>Finalizar pedido</p>";        
+    }    
 }
-
 function escolherFrango(){   
     document.getElementById("frango").style.borderColor = "#32B72F";
     document.getElementById("sushi").style.borderColor = "white";
@@ -87,21 +87,34 @@ function escolherCrumble(){
     valorSobremesa = 12.90;
     habilitarBotao()
 }
-
+function abrirModal(){
+    
+    total = valorPrato+valorBebida+valorSobremesa;
+    document.getElementById("comida").innerHTML = prato;
+    document.getElementById("comida-preco").innerHTML = valorPrato.toFixed(2).toString().replace(".",",");
+    document.getElementById("bebida").innerHTML = bebida;
+    document.getElementById("bebida-preco").innerHTML = valorBebida.toFixed(2).toString().replace(".",",");
+    document.getElementById("sobremesa").innerHTML = sobremesa;
+    document.getElementById("sobremesa-preco").innerHTML = valorSobremesa.toFixed(2).toString().replace(".",",");
+    document.getElementById("total").innerHTML = "R$ " + total.toFixed(2).toString().replace(".",",");
+    const modal = document.querySelector(".modal-container");
+    modal.classList.add('mostrar');    
+}
+function cancelarPedido(){
+    const modal = document.querySelector(".modal-container");
+    modal.classList.remove('mostrar');    
+}
 function finalizarPedido(){
-    let total = valorPrato+valorBebida+valorSobremesa;
+    total = valorPrato+valorBebida+valorSobremesa;
     total  = total.toFixed(2);
     let mensagem;
     mensagem = "Olá, gostaria de fazer o pedido:"
     +"\n - Prato: "+ prato
     +"\n - Bebida: "+bebida
     +"\n - Sobremesa: "+sobremesa
-    +"\nTotal: R$ "+total;
-    
+    +"\nTotal: R$ "+total;    
     const url = "https://wa.me/5538988318517?text="
     +encodeURIComponent(mensagem)
-    window.open(url, "_blank")
-    
+    window.open(url, "_blank");
 }
-
 
