@@ -9,7 +9,9 @@
             <link href="style.css" rel="stylesheet" /> 
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">          
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">      
         </head>
     <body>
         <div id="container">
@@ -21,102 +23,102 @@
             </header>
             <div class="conteudo">                
                 <h3>Primeiro, seu prato</h3>
-                <div class="conteudo-div">
-                    <div class="produto item1" id="frango" onclick="escolherFrango()">                       
+                <div class="conteudo-div" data-identifier="dishes">
+                    <div class="produto item1" id="frango" onclick="escolherFrango()" data-identifier="food-option">                       
                             <img src="https://www.kitano.com.br/wp-content/uploads/2019/07/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" alt="frango assado">                                             
-                        <span>Frango Yin Yang</span>
+                        <span data-identifier="food-title">Frango Yin Yang</span>
                         <div class="descricao">
                             <p>Um pouco de batata, um pouco de farofa </p>
                         </div>
                         <div class="preco">
-                            <p>R$ 16,90</p>
+                            <p data-identifier="food-price">R$ 16,90</p>
                         </div>                            
                     </div>
-                    <div class="produto" id="sushi" onclick="escolherSushi()">
+                    <div class="produto" id="sushi" onclick="escolherSushi()" data-identifier="food-option">
                         <img src="https://a-static.mlcdn.com.br/1500x1500/embalagem-barca-sushi-pequena-galvanotek-go935-100und/embalagemfacil/574894343/5dff8108352ef5ca28b116830b99db4d.jpg" alt="barca sushi">
-                        <span>Barca Sushi</span>
+                        <span data-identifier="food-title">Barca Sushi</span>
                         <div class="descricao">
                             <p>Um pouco de tudo, com arroz</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 30,90</p>
+                            <p data-identifier="food-price">R$ 30,90</p>
                         </div>                            
                     </div>   
-                    <div class="produto" id="peixe" onclick="escolherPeixe()">
+                    <div class="produto" id="peixe" onclick="escolherPeixe()" data-identifier="food-option">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d1/24/21/porcao-de-peixe-frito.jpg" alt="Peixe Frito">
-                        <span>Peixe Frito</span>
+                        <span data-identifier="food-title">Peixe Frito</span>
                         <div class="descricao">
                             <p>Porção de peixe, um pouco de limão </p>
                         </div>
                         <div class="preco">
-                            <p>R$ 19,90</p>
+                            <p data-identifier="food-price">R$ 19,90</p>
                         </div>                            
                     </div>                                                                                    
                 </div>
                 <h3>Agora, sua bebida</h3>
-                <div class="conteudo-div">
-                    <div class="produto item1" id="coca" onclick="escolherCoca()">
+                <div class="conteudo-div" data-identifier="drinks">
+                    <div class="produto item1" id="coca" onclick="escolherCoca()" data-identifier="food-option">
                         <img src="https://thumbs.dreamstime.com/b/pode-e-o-vidro-de-coca-cola-com-gelo-no-fundo-de-madeira-80533589.jpg" alt="Coca cola">
-                        <span>Coquinha</span>
+                        <span data-identifier="food-title">Coquinha</span>
                         <div class="descricao">
                             <p>Lata 350ml </p>
                         </div>
                         <div class="preco">
-                            <p>R$ 7,90</p>
+                            <p data-identifier="food-price">R$ 7,90</p>
                         </div>                            
                     </div>
-                    <div class="produto" id="fanta" onclick="escolherFanta()">
+                    <div class="produto" id="fanta" onclick="escolherFanta()" data-identifier="food-option">
                         <img src="https://st4.depositphotos.com/2007325/31219/i/600/depositphotos_312192794-stock-photo-fanta-orange-vintage-can-black.jpg" alt="fanta 350">
-                        <span>Fanta Lata</span>
+                        <span data-identifier="food-title">Fanta Lata</span>
                         <div class="descricao">
                             <p>Lata 350ml</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 6,90</p>
+                            <p data-identifier="food-price">R$ 6,90</p>
                         </div>                            
                     </div>   
-                    <div class="produto" id="heineken" onclick="escolherHeineken()">
+                    <div class="produto" id="heineken" onclick="escolherHeineken()" data-identifier="food-option">
                         <img src="https://i.pinimg.com/originals/a8/26/f7/a826f7fcc4d2006c5a52483e445178be.jpg" alt="Heineken">
-                        <span>Heineken</span>
+                        <span data-identifier="food-title">Heineken</span>
                         <div class="descricao">
                             <p>Garrafa 330ml</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 5,90</p>
+                            <p data-identifier="food-price">R$ 5,90</p>
                         </div>                            
                     </div>                                                                                    
                 </div> 
                 
                 <h3>Por fim, sua sobremesa</h3>  
-                <div class="conteudo-div">
-                    <div class="produto item1" id="pudim" onclick="escolherPudim()">
+                <div class="conteudo-div" data-identifier="desserts">
+                    <div class="produto item1" id="pudim" onclick="escolherPudim()" data-identifier="food-option">
                         <img src="https://img.itdg.com.br/tdg/images/recipes/000/031/593/318825/318825_original.jpg?mode=crop&width=710&height=400" alt="Pudin">
-                        <span>Pudim</span>
+                        <span data-identifier="food-title">Pudim</span>
                         <div class="descricao">
                             <p>Apenas pudim</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 7,90</p>
+                            <p data-identifier="food-price">R$ 7,90</p>
                         </div>                            
                     </div>
-                    <div class="produto" id="morango" onclick="escolherMorango()">
+                    <div class="produto" id="morango" onclick="escolherMorango()" data-identifier="food-option">
                         <img src="https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/03/torta-morango-confeitaria2-1024x576.jpg" alt="torta morango">
-                        <span>Torta Morango</span>
+                        <span data-identifier="food-title">Torta Morango</span>
                         <div class="descricao">
                             <p>Torta clássica de morango</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 10,90</p>
+                            <p data-identifier="food-price">R$ 10,90</p>
                         </div>                            
                     </div>   
-                    <div class="produto" id="crumble" onclick="escolherCrumble()">
+                    <div class="produto" id="crumble" onclick="escolherCrumble()" data-identifier="food-option">
                         <img src="https://images.aws.nestle.recipes/resized/784dc3dc6566780fd5e1318bc0f6ef6d_torta_crumble_doce_de_leite_jpg._1200_600.jpg" alt="torta crumble">
-                        <span>Torta Crumble</span>
+                        <span data-identifier="food-title">Torta Crumble</span>
                         <div class="descricao">
                             <p>Com doce de leite e biscoito</p>
                         </div>
                         <div class="preco">
-                            <p>R$ 12,90</p>
+                            <p data-identifier="food-price">R$ 12,90</p>
                         </div>                            
                     </div>                                                                                    
                 </div>           
