@@ -43,7 +43,7 @@ function escolherCoca(){
     document.getElementById("coca").style.borderColor = "#32B72F";
     document.getElementById("fanta").style.borderColor = "white";
     document.getElementById("heineken").style.borderColor = "white";
-    bebida = "Coca-Cola lata 350ml";
+    bebida = "Coca-Cola 350ml";
     valorBebida = 7.90;
     habilitarBotao()
 }
@@ -51,7 +51,7 @@ function escolherFanta(){
     document.getElementById("fanta").style.borderColor = "#32B72F";
     document.getElementById("coca").style.borderColor = "white";   
     document.getElementById("heineken").style.borderColor = "white";
-    bebida = "Fanta lata 350ml";
+    bebida = "Fanta 350ml";
     valorBebida = 6.90;
     habilitarBotao()
 }
@@ -88,7 +88,6 @@ function escolherCrumble(){
     habilitarBotao()
 }
 function abrirModal(){
-    
     total = valorPrato+valorBebida+valorSobremesa;
     document.getElementById("comida").innerHTML = prato;
     document.getElementById("comida-preco").innerHTML = valorPrato.toFixed(2).toString().replace(".",",");
