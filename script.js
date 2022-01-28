@@ -46,7 +46,7 @@ function escolherCoca(){
     document.getElementById("coca").style.borderColor = "green";
     document.getElementById("fanta").style.borderColor = "white";
     document.getElementById("heineken").style.borderColor = "white";
-    bebida = "Coca-Cola 350ml";
+    bebida = "Coca-Cola lata 350ml";
     valorBebida = 7.90;
     habilitarBotao()
 }
@@ -54,7 +54,7 @@ function escolherFanta(){
     document.getElementById("fanta").style.borderColor = "green";
     document.getElementById("coca").style.borderColor = "white";   
     document.getElementById("heineken").style.borderColor = "white";
-    bebida = "Fanta 350ml";
+    bebida = "Fanta lata 350ml";
     valorBebida = 6.90;
     habilitarBotao()
 }
@@ -93,7 +93,18 @@ function escolherCrumble(){
 
 function finalizarPedido(){
     let total = valorPrato+valorBebida+valorSobremesa;
-    alert ("teste");
+    total  = total.toFixed(2);
+    let mensagem;
+    mensagem = "Olá, gostaria de fazer o pedido:"
+    +"\n - Prato: "+ prato
+    +"\n - Bebida: "+bebida
+    +"\n - Sobremesa: "+sobremesa
+    +"\nTotal: R$ "+total;
+    
+    const url = "https://wa.me/5538988318517?text="
+    +encodeURIComponent(mensagem)
+    window.open(url, "_blank")
+    
 }
 
 
