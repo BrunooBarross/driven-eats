@@ -15,6 +15,7 @@
         </head>
     <body>         
         <div id="container">
+            <div class="sombra"></div>
             <div class="modal-container">
                 <div class="modal">
                     <h1>Confirme seu pedido</h1>
@@ -58,7 +59,8 @@
                         </div>
                         <div class="preco">
                             <p data-identifier="food-price">R$ 16,90</p>
-                        </div>                            
+                            <ion-icon id="check_frango_yin_yang" name="checkmark-circle"></ion-icon>
+                        </div>                                                    
                     </div>
                     <div class="produto" id="sushi" onclick="escolherSushi()" data-identifier="food-option">
                         <img src="https://a-static.mlcdn.com.br/1500x1500/embalagem-barca-sushi-pequena-galvanotek-go935-100und/embalagemfacil/574894343/5dff8108352ef5ca28b116830b99db4d.jpg" alt="barca sushi">
@@ -154,5 +156,6 @@
             </footer>           
         </div>
        <script src="script.js"></script>
+       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>        
 </html>

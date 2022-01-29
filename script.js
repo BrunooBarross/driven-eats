@@ -87,8 +87,11 @@ function escolherCrumble(){
     valorSobremesa = 12.90;
     habilitarBotao()
 }
+const sombra = document.querySelector(".sombra");
+
 function abrirModal(){
-    total = valorPrato+valorBebida+valorSobremesa;
+    sombra.classList.add('mostrar-sombra');
+    total = valorPrato+valorBebida+valorSobremesa;    
     document.getElementById("comida").innerHTML = prato;
     document.getElementById("comida-preco").innerHTML = valorPrato.toFixed(2).toString().replace(".",",");
     document.getElementById("bebida").innerHTML = bebida;
@@ -99,7 +102,8 @@ function abrirModal(){
     const modal = document.querySelector(".modal-container");
     modal.classList.add('mostrar');    
 }
-function cancelarPedido(){
+function cancelarPedido(){    
+    sombra.classList.remove('mostrar-sombra');
     const modal = document.querySelector(".modal-container");
     modal.classList.remove('mostrar');    
 }
