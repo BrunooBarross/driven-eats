@@ -144,7 +144,7 @@ function finalizarPedido(){
     +"\n - Bebida: "+bebida
     +"\n - Sobremesa: "+sobremesa
     +"\nTotal: R$ "+total;    
-    const url = "https://wa.me/5538988318517?text="
+    const url = "https://wa.me/5521999521936?text="
     +encodeURIComponent(mensagem)
     window.open(url, "_blank");
 }
