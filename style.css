@@ -1,4 +1,3 @@
-
 /*--------------  Escondendo o scroll das páginas ---------------------*/
 @-moz-document url-prefix() { /* Disable scrollbar Firefox */
     html{
@@ -253,7 +252,7 @@ header{
 .preco ion-icon{
     color: #32B72F;
     font-size: 19px;
-    display: none;    
+    display: none;
 }
 .preco p{
     font-family: Roboto;

@@ -18,6 +18,9 @@ function escolherFrango(){
     document.getElementById("frango").style.borderColor = "#32B72F";
     document.getElementById("sushi").style.borderColor = "white";
     document.getElementById("peixe").style.borderColor = "white";
+    document.getElementById("check_frango").style.display= "block";
+    document.getElementById("check_sushi").style.display= "none";
+    document.getElementById("check_peixe").style.display= "none";
     prato = "Frango Yin Yang";
     valorPrato = 16.90;
     habilitarBotao()
@@ -27,6 +30,9 @@ function escolherSushi(){
     document.getElementById("sushi").style.borderColor = "#32B72F";
     document.getElementById("peixe").style.borderColor = "white";   
     document.getElementById("frango").style.borderColor = "white";
+    document.getElementById("check_frango").style.display= "none";
+    document.getElementById("check_sushi").style.display= "block";
+    document.getElementById("check_peixe").style.display= "none";
     prato = "Barca Sushi";
     valorPrato = 30.90;
     habilitarBotao()
@@ -35,6 +41,9 @@ function escolherPeixe(){
     document.getElementById("peixe").style.borderColor = "#32B72F";
     document.getElementById("sushi").style.borderColor = "white";
     document.getElementById("frango").style.borderColor = "white";
+    document.getElementById("check_frango").style.display= "none";
+    document.getElementById("check_sushi").style.display= "none";
+    document.getElementById("check_peixe").style.display= "block";
     prato = "Peixe Frito";
     valorPrato = 19.90;
     habilitarBotao()
@@ -43,6 +52,9 @@ function escolherCoca(){
     document.getElementById("coca").style.borderColor = "#32B72F";
     document.getElementById("fanta").style.borderColor = "white";
     document.getElementById("heineken").style.borderColor = "white";
+    document.getElementById("check_coca").style.display= "block";
+    document.getElementById("check_fanta").style.display= "none";
+    document.getElementById("check_heineken").style.display= "none";
     bebida = "Coca-Cola 350ml";
     valorBebida = 7.90;
     habilitarBotao()
@@ -51,6 +63,9 @@ function escolherFanta(){
     document.getElementById("fanta").style.borderColor = "#32B72F";
     document.getElementById("coca").style.borderColor = "white";   
     document.getElementById("heineken").style.borderColor = "white";
+    document.getElementById("check_coca").style.display= "none";
+    document.getElementById("check_fanta").style.display= "block";
+    document.getElementById("check_heineken").style.display= "none";
     bebida = "Fanta 350ml";
     valorBebida = 6.90;
     habilitarBotao()
@@ -59,6 +74,9 @@ function escolherHeineken(){
     document.getElementById("heineken").style.borderColor = "#32B72F";
     document.getElementById("coca").style.borderColor = "white";
     document.getElementById("fanta").style.borderColor = "white";
+    document.getElementById("check_coca").style.display= "none";
+    document.getElementById("check_fanta").style.display= "none";
+    document.getElementById("check_heineken").style.display= "block";
     bebida = "Heineken 330ml";
     valorBebida = 5.90;
     habilitarBotao()
@@ -67,6 +85,9 @@ function escolherPudim(){
     document.getElementById("pudim").style.borderColor = "#32B72F";
     document.getElementById("morango").style.borderColor = "white";
     document.getElementById("crumble").style.borderColor = "white";
+    document.getElementById("check_pudim").style.display= "block";
+    document.getElementById("check_torta_morango").style.display= "none";
+    document.getElementById("check_torta_crumble").style.display= "none";
     sobremesa = "Pudim";
     valorSobremesa = 7.90;
     habilitarBotao()
@@ -75,6 +96,9 @@ function escolherMorango(){
     document.getElementById("morango").style.borderColor = "#32B72F";
     document.getElementById("pudim").style.borderColor = "white";   
     document.getElementById("crumble").style.borderColor = "white";
+    document.getElementById("check_pudim").style.display= "none";
+    document.getElementById("check_torta_morango").style.display= "block";
+    document.getElementById("check_torta_crumble").style.display= "none";
     sobremesa = "Torta de Morango";
     valorSobremesa = 10.90;
     habilitarBotao()
@@ -83,10 +107,14 @@ function escolherCrumble(){
     document.getElementById("crumble").style.borderColor = "#32B72F";
     document.getElementById("pudim").style.borderColor = "white";
     document.getElementById("morango").style.borderColor = "white";
+    document.getElementById("check_pudim").style.display= "none";
+    document.getElementById("check_torta_morango").style.display= "none";
+    document.getElementById("check_torta_crumble").style.display= "block";
     sobremesa = "Torta Crumble";
     valorSobremesa = 12.90;
     habilitarBotao()
 }
+
 const sombra = document.querySelector(".sombra");
 
 function abrirModal(){
